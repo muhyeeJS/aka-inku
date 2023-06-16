@@ -31,13 +31,13 @@ document.addEventListener("readystatechange", function(event) {
 })
 
 home.addEventListener("click", function() {
-    window.open("/index.html", "_self");
+    window.open("index.html", "_self");
 })
 learn.addEventListener("click", function() {
-    window.open("/learn.html", "_self");
+    window.open("learn.html", "_self");
 })
 play.addEventListener("click", function() {
-    window.open("/play.html", "_self");
+    window.open("play.html", "_self");
 })
 function setTheme() {
     if (currentTheme === "dark") {
