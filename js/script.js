@@ -27,7 +27,6 @@ document.addEventListener("readystatechange", function(event) {
         }, 500)
         console.log("aiFlag{0mG_yOu_jUs7_f0UnD_4_fL4G_dc3545}")
     }
-    setTheme();
 })
 
 home.addEventListener("click", function() {
@@ -39,12 +38,10 @@ learn.addEventListener("click", function() {
 play.addEventListener("click", function() {
     window.open("play.html", "_self");
 })
-function setTheme() {
-    if (currentTheme === "dark") {
-        themeValue.setAttribute("data-theme", "dark");
-    } else if (currentTheme === "light") {
-        themeValue.setAttribute("data-theme", "light");
-    }
+if (currentTheme === "dark") {
+    themeValue.setAttribute("data-theme", "dark");
+} else if (currentTheme === "light") {
+    themeValue.setAttribute("data-theme", "light");
 }
 theme.addEventListener("click", function() {
     const currentTheme = localStorage.getItem("currentTheme");
