@@ -40,7 +40,7 @@ play.addEventListener("click", function() {
 })
 if (currentTheme === "dark") {
     themeValue.setAttribute("data-theme", "dark");
-} else if (currentTheme === "light" || currentTheme === null) {
+} else if (currentTheme === "light") {
     themeValue.setAttribute("data-theme", "light");
 }
 theme.addEventListener("click", function() {
@@ -49,7 +49,7 @@ theme.addEventListener("click", function() {
     if(currentTheme === "dark") {
         themeValue.setAttribute("data-theme", "light");
         localStorage.setItem("currentTheme", "light");
-    } else if (currentTheme === "light") {
+    } else if (currentTheme === "light" || currentTheme === null || currentTheme === "" || currentTheme === undefined) {
         themeValue.setAttribute("data-theme", "dark");
         localStorage.setItem("currentTheme", "dark");
     }
