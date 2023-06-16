@@ -40,7 +40,7 @@ play.addEventListener("click", function() {
 })
 if (currentTheme === "dark") {
     themeValue.setAttribute("data-theme", "dark");
-} else if (currentTheme === "light") {
+} else if (currentTheme === "light" || currentTheme === null) {
     themeValue.setAttribute("data-theme", "light");
 }
 theme.addEventListener("click", function() {
