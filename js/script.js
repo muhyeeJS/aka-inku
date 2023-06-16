@@ -44,6 +44,7 @@ if (currentTheme === "dark") {
     themeValue.setAttribute("data-theme", "light");
 }
 theme.addEventListener("click", function() {
+    console.log("clicked");
     const currentTheme = localStorage.getItem("currentTheme");
     if(currentTheme === "dark") {
         themeValue.setAttribute("data-theme", "light");
