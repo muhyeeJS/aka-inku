@@ -30,13 +30,13 @@ document.addEventListener("readystatechange", function(event) {
 })
 
 home.addEventListener("click", function() {
-    window.open("index.html", "_self");
+    window.open("index", "_self");
 })
 learn.addEventListener("click", function() {
-    window.open("learn.html", "_self");
+    window.open("learn", "_self");
 })
 play.addEventListener("click", function() {
-    window.open("play.html", "_self");
+    window.open("play", "_self");
 })
 if (currentTheme === "dark") {
     themeValue.setAttribute("data-theme", "dark");
